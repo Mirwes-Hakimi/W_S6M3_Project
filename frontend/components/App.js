@@ -42,7 +42,14 @@ if (!apod) return 'Fetching Photo of the Day...'
   
   return (
     <section>
-  
+    
+    <Card
+ 
+      title={apod.title}
+      text={apod.explanation}
+      imageURL ={apod.url}
+      date ={apod.date}
+     />
   </section>
   )
 }
